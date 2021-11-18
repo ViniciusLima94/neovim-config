@@ -7,6 +7,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
 "Plug 'romgrk/barbar.nvim'
 Plug 'Numkil/ag.nvim'
 Plug 'itchyny/lightline.vim'
@@ -82,6 +83,7 @@ let mapleader="\<space>"
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 
+nmap <C-g> :Git<space>
 " Resize
 nmap <C-j> :resize +1<CR>
 nmap <C-k> :resize -1<CR>
