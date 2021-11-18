@@ -83,6 +83,7 @@ let mapleader="\<space>"
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 
+" Git commands
 nmap <C-g> :Git<space>
 " Resize
 nmap <C-j> :resize +1<CR>
