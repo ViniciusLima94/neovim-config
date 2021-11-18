@@ -83,6 +83,10 @@ let mapleader="\<space>"
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
 
+" Save and quit keybindings
+nmap <C-s> :w<cr>
+nmap <C-q> :q<cr>
+
 " Git commands
 nmap <C-g> :Git<space>
 " Resize
@@ -92,6 +96,11 @@ nmap <C-h> :vertical resize -1<CR>
 nmap <C-l> :vertical resize +1<CR>
 " Shortcut to put ; at the end of the line
 nmap <leader>; A;<esc>
+" Shortcut to add ::
+nmap <leader>: i::<esc>
+" Add single comma and double comma at the end of the line
+nmap <leader>' i'<esc>
+nmap <leader>" i"<esc>
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 " NERDCommenter
