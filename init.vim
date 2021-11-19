@@ -131,6 +131,8 @@ vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 " UndoTree
 nnoremap <F5> :UndotreeToggle<CR>
+" Select all
+nnoremap <C-A> ggVG
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The settings bellow are from https://github.com/neoclide/coc.nvim
@@ -246,6 +248,19 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+function! SetupCommandAbbrs(from, to)
+  exec 'cnoreabbrev <expr> '.a:from
+        \ .' ((getcmdtype() ==# ":" && getcmdline() ==# "'.a:from.'")'
+        \ .'? ("'.a:to.'") : ("'.a:from.'"))'
+endfunction
+
+" Use C to open coc config
+call SetupCommandAbbrs('C', 'CocConfig')
+
+" Remap keys for range format
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  End COC configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
