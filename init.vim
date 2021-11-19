@@ -38,6 +38,8 @@ set incsearch
 set spelllang=en_us
 set relativenumber
 set mouse=a
+" copy paste
+set clipboard=unnamedplus
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
