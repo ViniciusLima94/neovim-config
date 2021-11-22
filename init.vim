@@ -1,6 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Specify a directory for plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
