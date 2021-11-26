@@ -6,6 +6,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'preservim/nerdcommenter'
+"Plug 'stevearc/aerial.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Use release branch (recommend)
@@ -127,8 +128,8 @@ nmap <leader>; A;<esc>
 " Shortcut to add ::
 nmap <leader>: A::
 " Add single comma and double comma at the end of the line
-nmap <leader>' i'A'<esc>
-nmap <leader>" i"A"<esc>
+nmap <leader>' i'<esc>A'<esc>
+nmap <leader>" i"<esc>A"<esc>
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 " NERDCommenter
