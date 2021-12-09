@@ -6,6 +6,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'preservim/nerdcommenter'
+Plug 'daeyun/vim-matlab'
 "Plug 'stevearc/aerial.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
