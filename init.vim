@@ -6,7 +6,11 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'preservim/nerdcommenter'
+<<<<<<< HEAD
 Plug 'daeyun/vim-matlab'
+=======
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+>>>>>>> b87b9886f78075dec8592742ed4538547b5cd7e6
 "Plug 'stevearc/aerial.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -129,8 +133,8 @@ nmap <leader>; A;<esc>
 " Shortcut to add ::
 nmap <leader>: A::
 " Add single comma and double comma at the end of the line
-nmap <leader>' i'<esc>A'<esc>
-nmap <leader>" i"<esc>A"<esc>
+nmap <leader>' i'<esc>w'<esc>
+nmap <leader>" i"<esc>w"<esc>
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 " NERDCommenter
@@ -144,6 +148,8 @@ nnoremap <C-A> ggVG
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The settings bellow are from https://github.com/neoclide/coc.nvim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Path to node.js 
+let g:coc_node_path = '/usr/bin/node'
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
