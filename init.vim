@@ -6,11 +6,6 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'preservim/nerdcommenter'
-<<<<<<< HEAD
-Plug 'daeyun/vim-matlab'
-=======
-Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
->>>>>>> b87b9886f78075dec8592742ed4538547b5cd7e6
 "Plug 'stevearc/aerial.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
