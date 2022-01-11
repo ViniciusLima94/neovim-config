@@ -132,6 +132,8 @@ nmap <leader>' i'<esc>w'<esc>
 nmap <leader>" i"<esc>w"<esc>
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
+nmap <leader>% i%>%<esc> 
+nmap <leader>< i<-<esc>
 " NERDCommenter
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
