@@ -138,8 +138,8 @@ nmap <leader>" i"<esc>w"<esc>
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <leader>% i %>%  
-nmap <leader>< i <- 
-nmap <leader>> i ->
+nmap <leader>< A <- 
+nmap <leader>> A ->
 " NERDCommenter
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
