@@ -126,8 +126,8 @@ nmap <C-h> :vertical resize -1<CR>
 nmap <C-l> :vertical resize +1<CR>
 " Shortcut to put ; at the end of the line
 nmap <leader>; A;<esc>
-nmap <leader>io I#include <stdio.h><esc>
-nmap <leader>lib I#include <stdlib.h><esc>
+nmap <leader>io I#include <stdio.h><CR><esc>
+nmap <leader>lib I#include <stdlib.h><CR><esc>
 nmap <leader>inc I#include
 nmap <leader>def I#define
 " Shortcut to add ::
@@ -139,6 +139,7 @@ nmap <leader>" i"<esc>w"<esc>
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <leader>% i %>%  
 nmap <leader>< i <- 
+nmap <leader>> i ->
 " NERDCommenter
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
