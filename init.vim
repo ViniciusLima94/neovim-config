@@ -6,6 +6,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'deoplete-plugins/deoplete-clang'
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'preservim/nerdcommenter'
 "Plug 'stevearc/aerial.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -66,6 +67,8 @@ if has("nvim-0.5.0") || has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
+
+set colorcolumn=79
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
