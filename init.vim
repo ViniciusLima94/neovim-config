@@ -5,6 +5,7 @@
 call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
+Plug 'dense-analysis/ale'
 Plug 'deoplete-plugins/deoplete-clang'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'preservim/nerdcommenter'
@@ -105,6 +106,21 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
 
+let g:ale_linters = {
+    \ 'python': ['pylint'],
+    \ 'vim': ['vint'],
+    \ 'cpp': ['clang'],
+    \ 'c': ['clang']
+\}
+
+" custom setting for clangformat
+let g:neoformat_cpp_clangformat = {
+    \ 'exe': 'clang-format',
+    \ 'args': ['--style="{IndentWidth: 4}"']
+\}
+let g:neoformat_enabled_cpp = ['clangformat']
+let g:neoformat_enabled_c = ['clangformat']
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set commands and key mappings
@@ -112,6 +128,9 @@ let g:cpp_no_function_highlight = 1
 let g:rainbow_active = 1
 
 let mapleader="\<space>"
+
+" mark number of columns (79)
+set colorcolumn=79
 
 nnoremap <c-p> :Files<cr>
 nnoremap <c-f> :Ag<space>
