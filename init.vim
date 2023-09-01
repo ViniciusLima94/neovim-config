@@ -9,14 +9,10 @@ Plug 'dense-analysis/ale'
 Plug 'deoplete-plugins/deoplete-clang'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'preservim/nerdcommenter'
-"Plug 'stevearc/aerial.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Use release branch (recommend)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
-"Plug 'romgrk/barbar.nvim'
 Plug 'Numkil/ag.nvim'
 Plug 'itchyny/lightline.vim'
 Plug 'frazrepo/vim-rainbow'
@@ -25,10 +21,10 @@ Plug 'Yggdroot/indentLine'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'psliwka/vim-smoothie'
 Plug 'mbbill/undotree'
-" Themes
 Plug 'morhetz/gruvbox'
 Plug 'folke/tokyonight.nvim'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -113,6 +109,9 @@ let g:ale_linters = {
     \ 'c': ['clang']
 \}
 
+let g:ale_virtualtext_cursor = 'disabled'
+
+
 " custom setting for clangformat
 let g:neoformat_cpp_clangformat = {
     \ 'exe': 'clang-format',
@@ -174,15 +173,15 @@ nnoremap <C-A> ggVG
 " The settings bellow are from https://github.com/neoclide/coc.nvim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Path to node.js 
-let g:coc_node_path = '/usr/bin/node'
+let g:coc_node_path = "/home/vinicius/anaconda3/envs/ipp/bin/node"
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+"inoremap <silent><expr> <TAB>
+      "\ pumvisible() ? "\<C-n>" :
+      "\ <SID>check_back_space() ? "\<TAB>" :
+      "\ coc#refresh()
+"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -226,7 +225,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+"autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
