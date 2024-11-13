@@ -24,7 +24,7 @@ Plug 'mbbill/undotree'
 Plug 'morhetz/gruvbox'
 Plug 'folke/tokyonight.nvim'
 Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
