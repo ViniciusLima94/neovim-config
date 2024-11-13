@@ -7,7 +7,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
 Plug 'dense-analysis/ale'
 Plug 'deoplete-plugins/deoplete-clang'
-Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
+"Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
